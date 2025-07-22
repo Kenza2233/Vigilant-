@@ -21,5 +21,8 @@ data class Chapter(
     val projectId: Int,
     val title: String,
     val content: String,
-    val order: Int
+    val order: Int,
+    val wordCount: Int = 0,
+    val timeSpentTyping: Long = 0L,
+    val typingSpeed: Float = 0f
 )

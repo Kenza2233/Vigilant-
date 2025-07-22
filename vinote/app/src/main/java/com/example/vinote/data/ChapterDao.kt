@@ -20,4 +20,7 @@ interface ChapterDao {
 
     @Query("SELECT * FROM chapters WHERE projectId = :projectId ORDER BY `order` ASC")
     fun getChaptersForProject(projectId: Int): Flow<List<Chapter>>
+
+    @Query("SELECT * FROM chapters")
+    fun getAllChapters(): Flow<List<Chapter>>
 }
