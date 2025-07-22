@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!--
+   In this file you can specify which files/directories should be backed up.
+   For more information see the docs:
+   https://developer.android.com/guide/topics/data/autobackup
+    -->
+    <include
+        domain="database"
+        path="." />
+    <include
+        domain="sharedpref"
+        path="." />
+</full-backup-content>
