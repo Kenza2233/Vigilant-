@@ -7,19 +7,25 @@ import androidx.navigation.compose.NavHost
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.composable
 import com.example.vinote.AppViewModelProvider
+import com.example.vinote.ui.about.AboutScreen
 import com.example.vinote.ui.dashboard.DashboardScreen
 import com.example.vinote.ui.editor.EditorScreen
+import com.example.vinote.ui.newfeatures.NewFeaturesScreen
 import com.example.vinote.ui.projects.AddProjectScreen
 import com.example.vinote.ui.projects.ProjectsScreen
 import com.example.vinote.ui.projects.ProjectsViewModel
 import com.example.vinote.ui.settings.CloudSyncSettingsScreen
+import com.example.vinote.ui.theme.ThemeScreen
 
 enum class VinoteScreen {
     Projects,
     AddProject,
     Editor,
     Dashboard,
-    Settings
+    Settings,
+    Theme,
+    About,
+    NewFeatures
 }
 
 @Composable
@@ -38,7 +44,10 @@ fun VinoteNavHost(
                 onAddProject = { navController.navigate(VinoteScreen.AddProject.name) },
                 onProjectClick = { navController.navigate(VinoteScreen.Editor.name) },
                 onDashboardClick = { navController.navigate(VinoteScreen.Dashboard.name) },
-                onSettingsClick = { navController.navigate(VinoteScreen.Settings.name) }
+                onSettingsClick = { navController.navigate(VinoteScreen.Settings.name) },
+                onThemeClick = { navController.navigate(VinoteScreen.Theme.name) },
+                onAboutClick = { navController.navigate(VinoteScreen.About.name) },
+                onNewFeaturesClick = { navController.navigate(VinoteScreen.NewFeatures.name) }
             )
         }
         composable(route = VinoteScreen.AddProject.name) {
@@ -62,6 +71,15 @@ fun VinoteNavHost(
             CloudSyncSettingsScreen(
                 onNavigateUp = { navController.navigateUp() }
             )
+        }
+        composable(route = VinoteScreen.Theme.name) {
+            ThemeScreen()
+        }
+        composable(route = VinoteScreen.About.name) {
+            AboutScreen()
+        }
+        composable(route = VinoteScreen.NewFeatures.name) {
+            NewFeaturesScreen()
         }
     }
 }

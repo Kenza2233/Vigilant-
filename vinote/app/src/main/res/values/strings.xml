@@ -8,4 +8,7 @@
     <string name="save">Save</string>
     <string name="dashboard">Dashboard</string>
     <string name="cloud_sync_settings">Cloud Sync Settings</string>
+    <string name="themes">Themes</string>
+    <string name="about">About</string>
+    <string name="new_features">New Features</string>
 </resources>
