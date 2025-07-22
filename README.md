@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/g6QZ93m.png" alt="Vinote logo"></a>
+ <img width=200px height=200px src="https://i.imgur.com/a/kGahc3J.png" alt="Vinote logo"></a>
 </p>
 
 <h1 align="center">Vinote</h1>
