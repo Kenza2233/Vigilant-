@@ -16,7 +16,7 @@
 
 ---
 
-<p align="center"> Vinote adalah aplikasi penulis novel untuk Android yang membantu Anda tetap teratur dan termotivasi.
+<p align="center"> 🚀 Vinote adalah aplikasi penulis novel untuk Android yang membantu Anda tetap teratur dan termotivasi. 🚀
     <br>
 </p>
 
@@ -24,6 +24,7 @@
 
 *   [Tentang](#about)
 *   [Fitur](#features)
+*   [Pratinjau Aplikasi](#preview)
 *   [Memulai](#getting_started)
 *   [Instalasi](#installation)
 *   [Berkontribusi](#contributing)
@@ -44,6 +45,14 @@ Vinote dirancang untuk menjadi teman menulis utama Anda. Baik Anda seorang novel
     *   **Kecepatan Mengetik:** Ukur kecepatan mengetik Anda dalam kata per menit (WPM).
 *   **Penyimpanan Lokal:** Semua data Anda disimpan dengan aman di perangkat Anda.
 
+## 📱 Pratinjau Aplikasi <a name = "preview"></a>
+
+<p align="center">
+  <img src="https://i.imgur.com/YOUR_SCREENSHOT_1.png" width="250" />
+  <img src="https://i.imgur.com/YOUR_SCREENSHOT_2.png" width="250" />
+  <img src="https://i.imgur.com/YOUR_SCREENSHOT_3.png" width="250" />
+</p>
+
 ## 🏁 Memulai <a name = "getting_started"></a>
 
 Prasyarat berikut diperlukan untuk membangun dan menjalankan proyek:
@@ -61,9 +70,19 @@ git clone https://github.com/your-username/vinote.git
 
 ## 🔧 Instalasi <a name = "installation"></a>
 
-1.  Buka proyek di Android Studio.
-2.  Izinkan Gradle menyinkronkan dan mengunduh semua dependensi yang diperlukan.
-3.  Jalankan aplikasi di emulator atau perangkat fisik.
+### <img src="https://i.imgur.com/426aJ2E.png" width="25" /> Android
+
+1.  Buka proyek di **Android Studio**.
+2.  Izinkan **Gradle** menyinkronkan dan mengunduh semua dependensi yang diperlukan.
+3.  Jalankan aplikasi di **emulator** atau **perangkat fisik**.
+
+### <img src="https://i.imgur.com/0dYQj4p.png" width="25" /> iOS
+
+Saat ini, Vinote hanya tersedia untuk Android. Namun, kami menyambut baik kontribusi untuk membawa Vinote ke iOS. Jika Anda seorang pengembang iOS dan tertarik untuk membantu, silakan lihat bagian [Berkontribusi](#contributing).
+
+### <img src="https://i.imgur.com/J3xQ2Qj.png" width="25" /> Linux
+
+Mirip dengan iOS, kami saat ini tidak memiliki build desktop untuk Linux. Namun, proyek ini dapat diperluas untuk mendukung desktop menggunakan [Compose for Desktop](https://www.jetbrains.com/lp/compose-mpp/). Jika Anda tertarik untuk mengerjakan ini, kami akan senang menerima bantuan Anda!
 
 ## 🤝 Berkontribusi <a name = "contributing"></a>
 
