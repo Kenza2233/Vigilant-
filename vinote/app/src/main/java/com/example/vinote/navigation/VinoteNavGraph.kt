@@ -12,12 +12,14 @@ import com.example.vinote.ui.editor.EditorScreen
 import com.example.vinote.ui.projects.AddProjectScreen
 import com.example.vinote.ui.projects.ProjectsScreen
 import com.example.vinote.ui.projects.ProjectsViewModel
+import com.example.vinote.ui.settings.CloudSyncSettingsScreen
 
 enum class VinoteScreen {
     Projects,
     AddProject,
     Editor,
-    Dashboard
+    Dashboard,
+    Settings
 }
 
 @Composable
@@ -35,7 +37,8 @@ fun VinoteNavHost(
             ProjectsScreen(
                 onAddProject = { navController.navigate(VinoteScreen.AddProject.name) },
                 onProjectClick = { navController.navigate(VinoteScreen.Editor.name) },
-                onDashboardClick = { navController.navigate(VinoteScreen.Dashboard.name) }
+                onDashboardClick = { navController.navigate(VinoteScreen.Dashboard.name) },
+                onSettingsClick = { navController.navigate(VinoteScreen.Settings.name) }
             )
         }
         composable(route = VinoteScreen.AddProject.name) {
@@ -54,6 +57,11 @@ fun VinoteNavHost(
         }
         composable(route = VinoteScreen.Dashboard.name) {
             DashboardScreen()
+        }
+        composable(route = VinoteScreen.Settings.name) {
+            CloudSyncSettingsScreen(
+                onNavigateUp = { navController.navigateUp() }
+            )
         }
     }
 }

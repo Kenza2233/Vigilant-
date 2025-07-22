@@ -7,6 +7,7 @@ import androidx.lifecycle.viewmodel.viewModelFactory
 import com.example.vinote.ui.dashboard.DashboardViewModel
 import com.example.vinote.ui.editor.EditorViewModel
 import com.example.vinote.ui.projects.ProjectsViewModel
+import com.example.vinote.ui.settings.SettingsViewModel
 
 object AppViewModelProvider {
     val Factory = viewModelFactory {
@@ -18,6 +19,9 @@ object AppViewModelProvider {
         }
         initializer {
             DashboardViewModel(vinoteApplication().container.chaptersRepository)
+        }
+        initializer {
+            SettingsViewModel(vinoteApplication().container.cloudSyncServiceFactory)
         }
     }
 }

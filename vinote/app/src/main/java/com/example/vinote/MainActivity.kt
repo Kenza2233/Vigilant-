@@ -6,11 +6,15 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
+import android.content.Intent
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
+import com.example.vinote.data.cloud.GoogleDriveService
 import com.example.vinote.navigation.VinoteNavHost
 import com.example.vinote.ui.theme.VinoteTheme
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.common.api.ApiException
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +26,19 @@ class MainActivity : ComponentActivity() {
                     val navController = rememberNavController()
                     VinoteNavHost(navController = navController)
                 }
+            }
+        }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == GoogleDriveService.RC_SIGN_IN) {
+            val task = GoogleSignIn.getSignedInAccountFromIntent(data)
+            try {
+                val account = task.getResult(ApiException::class.java)
+                // Signed in successfully, handle account
+            } catch (e: ApiException) {
+                // The ApiException status code indicates the detailed failure reason.
             }
         }
     }

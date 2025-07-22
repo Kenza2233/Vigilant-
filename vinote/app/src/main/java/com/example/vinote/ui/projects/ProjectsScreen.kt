@@ -11,6 +11,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Dashboard
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.ListItem
@@ -33,6 +34,7 @@ fun ProjectsScreen(
     onAddProject: () -> Unit,
     onProjectClick: (Int) -> Unit,
     onDashboardClick: () -> Unit,
+    onSettingsClick: () -> Unit,
     modifier: Modifier = Modifier,
     viewModel: ProjectsViewModel = viewModel(factory = AppViewModelProvider.Factory)
 ) {
@@ -44,6 +46,9 @@ fun ProjectsScreen(
                 actions = {
                     IconButton(onClick = onDashboardClick) {
                         Icon(Icons.Default.Dashboard, contentDescription = "Dashboard")
+                    }
+                    IconButton(onClick = onSettingsClick) {
+                        Icon(Icons.Default.Settings, contentDescription = "Settings")
                     }
                 }
             )
