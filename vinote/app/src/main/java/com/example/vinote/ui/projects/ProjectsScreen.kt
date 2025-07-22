@@ -13,6 +13,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Dashboard
+import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.DrawerValue
@@ -50,6 +51,7 @@ fun ProjectsScreen(
     onThemeClick: () -> Unit,
     onAboutClick: () -> Unit,
     onNewFeaturesClick: () -> Unit,
+    onHealthClick: () -> Unit,
     modifier: Modifier = Modifier,
     viewModel: ProjectsViewModel = viewModel(factory = AppViewModelProvider.Factory)
 ) {
@@ -70,6 +72,12 @@ fun ProjectsScreen(
                     label = { Text("Settings") },
                     selected = false,
                     onClick = { onSettingsClick() }
+                )
+                NavigationDrawerItem(
+                    label = { Text("Health") },
+                    icon = { Icon(Icons.Default.Favorite, contentDescription = "Health") },
+                    selected = false,
+                    onClick = { onHealthClick() }
                 )
                 NavigationDrawerItem(
                     label = { Text("About") },

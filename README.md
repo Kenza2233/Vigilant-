@@ -43,6 +43,10 @@ Vinote dirancang untuk menjadi teman menulis utama Anda. Baik Anda seorang novel
     *   **Jumlah Kata:** Lacak jumlah kata untuk setiap bab dan proyek.
     *   **Waktu Mengetik:** Pantau waktu aktif Anda menulis.
     *   **Kecepatan Mengetik:** Ukur kecepatan mengetik Anda dalam kata per menit (WPM).
+*   **Sinkronisasi Cloud:** Sinkronkan pekerjaan Anda di beberapa perangkat dengan penyedia cloud favorit Anda.
+    *   <img src="https://i.imgur.com/8s3p4Qq.png" width="25" /> Google Drive
+    *   <img src="https://i.imgur.com/5fL7M7k.png" width="25" /> OneDrive
+    *   <img src="https://i.imgur.com/4fJ8L8D.png" width="25" /> Dropbox
 *   **Penyimpanan Lokal:** Semua data Anda disimpan dengan aman di perangkat Anda.
 
 ## 📱 Pratinjau Aplikasi <a name = "preview"></a>

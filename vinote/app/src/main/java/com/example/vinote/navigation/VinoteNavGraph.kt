@@ -7,6 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.composable
 import com.example.vinote.AppViewModelProvider
+import com.example.vinote.health.HealthSettingsScreen
 import com.example.vinote.ui.about.AboutScreen
 import com.example.vinote.ui.dashboard.DashboardScreen
 import com.example.vinote.ui.editor.EditorScreen
@@ -25,7 +26,8 @@ enum class VinoteScreen {
     Settings,
     Theme,
     About,
-    NewFeatures
+    NewFeatures,
+    Health
 }
 
 @Composable
@@ -47,7 +49,8 @@ fun VinoteNavHost(
                 onSettingsClick = { navController.navigate(VinoteScreen.Settings.name) },
                 onThemeClick = { navController.navigate(VinoteScreen.Theme.name) },
                 onAboutClick = { navController.navigate(VinoteScreen.About.name) },
-                onNewFeaturesClick = { navController.navigate(VinoteScreen.NewFeatures.name) }
+                onNewFeaturesClick = { navController.navigate(VinoteScreen.NewFeatures.name) },
+                onHealthClick = { navController.navigate(VinoteScreen.Health.name) }
             )
         }
         composable(route = VinoteScreen.AddProject.name) {
@@ -80,6 +83,9 @@ fun VinoteNavHost(
         }
         composable(route = VinoteScreen.NewFeatures.name) {
             NewFeaturesScreen()
+        }
+        composable(route = VinoteScreen.Health.name) {
+            HealthSettingsScreen()
         }
     }
 }
