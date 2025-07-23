@@ -24,7 +24,6 @@
 
 *   [Tentang](#about)
 *   [Fitur Unggulan](#features)
-*   [Pratinjau Aplikasi](#preview)
 *   [Membangun Aplikasi](#building)
 *   [Berkontribusi](#contributing)
 *   [Lisensi](#license)
@@ -51,22 +50,14 @@ Menulis novel adalah sebuah perjalanan, dan setiap penulis membutuhkan ruang ker
 *   **🧘 Fitur Kesehatan:** Kami peduli dengan kesejahteraan Anda. Aktifkan pengingat istirahat untuk menjaga diri Anda tetap segar dan terhindar dari kelelahan.
 *   **🌐 Terjemahan Bawaan:** Terjemahkan teks dengan cepat tanpa meninggalkan aplikasi.
 
-## 📱 Pratinjau Aplikasi <a name = "preview"></a>
-
-<p align="center">
-  <img src="https://i.imgur.com/YOUR_SCREENSHOT_1.png" width="250" />
-  <img src="https://i.imgur.com/YOUR_SCREENSHOT_2.png" width="250" />
-  <img src="https://i.imgur.com/YOUR_SCREENSHOT_3.png" width="250" />
-</p>
-
 ## 🚀 Membangun Aplikasi <a name = "building"></a>
 
 Tertarik untuk membangun Vinote dari sumbernya? Ikuti langkah-langkah ini untuk memulai.
 
 ### Prasyarat
 
-*   **Android Studio:** Versi "Giraffe" atau yang lebih baru direkomendasikan.
-*   **JDK:** Java Development Kit versi 11 atau lebih tinggi.
+*   **Android Studio:** Pastikan Anda memiliki versi terbaru [Android Studio](https://developer.android.com/studio).
+*   **JDK:** [Java Development Kit](https://www.oracle.com/java/technologies/downloads/) versi 11 atau lebih tinggi diperlukan.
 
 ### Langkah-langkah Membangun
 
@@ -82,11 +73,33 @@ Tertarik untuk membangun Vinote dari sumbernya? Ikuti langkah-langkah ini untuk 
 4.  **Jalankan Aplikasi:**
     *   Pilih perangkat (emulator atau fisik) dan klik ikon **Run** (▶️).
 
+### <img src="https://i.imgur.com/0dYQj4p.png" width="25" /> Membawa Vinote ke iOS
+
+Saat ini, Vinote adalah aplikasi khusus Android. Namun, kami sangat antusias dengan kemungkinan membawanya ke iOS. Dengan kekuatan **Kotlin Multiplatform**, sebagian besar logika bisnis aplikasi (termasuk manajemen database dan fitur inti) dapat dibagikan antara Android dan iOS, secara signifikan mengurangi upaya yang diperlukan untuk porting.
+
+Jika Anda seorang pengembang iOS yang bersemangat dan ingin menerima tantangan ini, berikut adalah peta jalan potensial:
+
+1.  **Migrasikan ke Kotlin Multiplatform (KMP):**
+    *   Restrukturisasi proyek menjadi proyek KMP, pisahkan kode bersama (logika bisnis, akses data) dari kode khusus platform (UI).
+2.  **Bangun UI iOS:**
+    *   Buat antarmuka pengguna iOS asli menggunakan SwiftUI, yang menggunakan logika bisnis bersama.
+3.  **Integrasi Khusus Platform:**
+    *   Terapkan fungsionalitas khusus platform apa pun yang diperlukan, seperti integrasi dengan iCloud.
+
+Kami sangat menyambut pengembang yang tertarik untuk memelopori upaya ini.
+
 ## 🤝 Berkontribusi <a name = "contributing"></a>
 
-Kami menyambut baik kontribusi dalam segala bentuk! Baik itu melaporkan bug, menyarankan fitur, atau mengirimkan kode, bantuan Anda sangat kami hargai.
+Kontribusi adalah yang membuat komunitas open source menjadi tempat yang luar biasa untuk belajar, menginspirasi, dan berkreasi. Setiap kontribusi yang Anda buat sangat **dihargai**.
 
-Lihat halaman [masalah](https://github.com/your-username/vinote/issues) kami untuk melihat di mana Anda dapat membantu.
+Jika Anda memiliki saran yang akan membuat ini lebih baik, silakan fork repo dan buat permintaan tarik. Anda juga dapat membuka masalah dengan tag "peningkatan".
+Jangan lupa beri bintang pada proyek ini! Terima kasih lagi!
+
+1.  Fork Proyek
+2.  Buat Cabang Fitur Anda (`git checkout -b feature/AmazingFeature`)
+3.  Lakukan Perubahan Anda (`git commit -m 'Add some AmazingFeature'`)
+4.  Dorong ke Cabang (`git push origin feature/AmazingFeature`)
+5.  Buka Permintaan Tarik
 
 ## 📝 Lisensi <a name = "license"></a>
 
