@@ -61,12 +61,12 @@ Vinote dirancang untuk menjadi teman menulis utama Anda. Baik Anda seorang novel
 
 Prasyarat berikut diperlukan untuk membangun dan menjalankan proyek:
 
-*   Android Studio
-*   JDK 11 atau lebih tinggi
+*   **Android Studio:** Pastikan Anda memiliki versi terbaru Android Studio.
+*   **JDK:** JDK 11 atau lebih tinggi diperlukan.
 
 ### Clone
 
-Untuk mendapatkan salinan lokal dan menjalankannya, ikuti langkah-langkah sederhana ini.
+Untuk mendapatkan salinan lokal dan menjalankannya, buka terminal Anda dan jalankan perintah git berikut:
 
 ```bash
 git clone https://github.com/your-username/vinote.git
@@ -76,21 +76,28 @@ git clone https://github.com/your-username/vinote.git
 
 ### <img src="https://i.imgur.com/426aJ2E.png" width="25" /> Android
 
-1.  Buka proyek di **Android Studio**.
-2.  Izinkan **Gradle** menyinkronkan dan mengunduh semua dependensi yang diperlukan.
-3.  Jalankan aplikasi di **emulator** atau **perangkat fisik**.
+1.  **Buka Proyek:** Buka Android Studio dan pilih "Buka Proyek yang Ada". Arahkan ke direktori tempat Anda mengkloning repositori dan pilih.
+2.  **Sinkronisasi Gradle:** Android Studio akan secara otomatis memulai sinkronisasi Gradle. Proses ini mengunduh semua dependensi yang diperlukan untuk proyek. Tunggu hingga selesai.
+3.  **Jalankan Aplikasi:** Setelah sinkronisasi selesai, Anda dapat menjalankan aplikasi.
+    *   **Emulator:** Pilih emulator Android dari daftar perangkat yang tersedia dan klik tombol "Jalankan".
+    *   **Perangkat Fisik:** Hubungkan perangkat Android Anda ke komputer Anda melalui USB. Pastikan Anda telah mengaktifkan Opsi Pengembang dan USB Debugging di perangkat Anda. Pilih perangkat Anda dari daftar dan klik "Jalankan".
 
-### <img src="https://i.imgur.com/0dYQj4p.png" width="25" /> iOS
+### <img src="https://i.imgur.com/0dYQj4p.png" width="25" /> iOS & <img src="https://i.imgur.com/J3xQ2Qj.png" width="25" /> Linux
 
-Saat ini, Vinote hanya tersedia untuk Android. Namun, kami menyambut baik kontribusi untuk membawa Vinote ke iOS. Jika Anda seorang pengembang iOS dan tertarik untuk membantu, silakan lihat bagian [Berkontribusi](#contributing).
-
-### <img src="https://i.imgur.com/J3xQ2Qj.png" width="25" /> Linux
-
-Mirip dengan iOS, kami saat ini tidak memiliki build desktop untuk Linux. Namun, proyek ini dapat diperluas untuk mendukung desktop menggunakan [Compose for Desktop](https://www.jetbrains.com/lp/compose-mpp/). Jika Anda tertarik untuk mengerjakan ini, kami akan senang menerima bantuan Anda!
+Saat ini, Vinote adalah aplikasi khusus Android. Namun, kami sangat antusias dengan kemungkinan membawanya ke platform lain! Jika Anda seorang pengembang dengan pengalaman dalam pengembangan iOS atau desktop (menggunakan Compose for Desktop), kami akan senang menerima kontribusi Anda. Lihat bagian [Berkontribusi](#contributing) di bawah ini untuk detailnya.
 
 ## 🤝 Berkontribusi <a name = "contributing"></a>
 
-Kontribusi, masalah, dan permintaan fitur dipersilakan! Jangan ragu untuk memeriksa halaman [masalah](https://github.com/your-username/vinote/issues).
+Kontribusi adalah yang membuat komunitas open source menjadi tempat yang luar biasa untuk belajar, menginspirasi, dan berkreasi. Setiap kontribusi yang Anda buat sangat **dihargai**.
+
+Jika Anda memiliki saran yang akan membuat ini lebih baik, silakan fork repo dan buat permintaan tarik. Anda juga dapat membuka masalah dengan tag "peningkatan".
+Jangan lupa beri bintang pada proyek ini! Terima kasih lagi!
+
+1.  Fork Proyek
+2.  Buat Cabang Fitur Anda (`git checkout -b feature/AmazingFeature`)
+3.  Lakukan Perubahan Anda (`git commit -m 'Add some AmazingFeature'`)
+4.  Dorong ke Cabang (`git push origin feature/AmazingFeature`)
+5.  Buka Permintaan Tarik
 
 ## 📝 Lisensi <a name = "license"></a>
 
