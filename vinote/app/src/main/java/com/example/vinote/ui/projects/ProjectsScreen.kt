@@ -15,10 +15,10 @@ import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Dashboard
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Menu
-import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.DrawerValue
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FloatingActionButton
+import com.example.vinote.ui.components.AnimatedSettingsIcon
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.ListItem
@@ -104,6 +104,9 @@ fun ProjectsScreen(
                     actions = {
                         IconButton(onClick = onDashboardClick) {
                             Icon(Icons.Default.Dashboard, contentDescription = "Dashboard")
+                        }
+                        IconButton(onClick = onSettingsClick) {
+                            AnimatedSettingsIcon()
                         }
                     }
                 )
