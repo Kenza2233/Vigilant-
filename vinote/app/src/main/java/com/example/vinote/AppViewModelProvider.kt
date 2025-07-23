@@ -10,6 +10,7 @@ import com.example.vinote.ui.editor.EditorViewModel
 import com.example.vinote.ui.projects.ProjectsViewModel
 import com.example.vinote.ui.settings.SettingsViewModel
 import com.example.vinote.ui.theme.ThemeViewModel
+import com.example.vinote.ui.translate.TranslateViewModel
 
 object AppViewModelProvider {
     val Factory = viewModelFactory {
@@ -30,6 +31,9 @@ object AppViewModelProvider {
         }
         initializer {
             HealthSettingsViewModel(vinoteApplication().applicationContext)
+        }
+        initializer {
+            TranslateViewModel()
         }
     }
 }

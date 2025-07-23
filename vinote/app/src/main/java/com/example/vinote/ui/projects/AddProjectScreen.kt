@@ -23,10 +23,11 @@ import com.example.vinote.R
 @Composable
 fun AddProjectScreen(
     onNavigateUp: () -> Unit,
-    onAddProject: (String) -> Unit,
+    onAddProject: (String, String) -> Unit,
     modifier: Modifier = Modifier
 ) {
     var projectName by remember { mutableStateOf("") }
+    var projectDescription by remember { mutableStateOf("") }
 
     Scaffold(
         topBar = {
@@ -45,8 +46,16 @@ fun AddProjectScreen(
                     .fillMaxWidth()
                     .padding(16.dp)
             )
+            OutlinedTextField(
+                value = projectDescription,
+                onValueChange = { projectDescription = it },
+                label = { Text(stringResource(R.string.project_description)) },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(16.dp)
+            )
             Button(
-                onClick = { onAddProject(projectName) },
+                onClick = { onAddProject(projectName, projectDescription) },
                 enabled = projectName.isNotBlank(),
                 modifier = Modifier
                     .fillMaxWidth()

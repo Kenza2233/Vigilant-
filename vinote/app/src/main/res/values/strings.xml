@@ -2,6 +2,7 @@
     <string name="app_name">Vinote</string>
     <string name="add_project">Add Project</string>
     <string name="project_name">Project Name</string>
+    <string name="project_description">Project Description</string>
     <string name="editor">Editor</string>
     <string name="title">Title</string>
     <string name="content">Content</string>

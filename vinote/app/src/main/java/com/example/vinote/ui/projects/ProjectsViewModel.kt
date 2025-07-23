@@ -19,9 +19,9 @@ class ProjectsViewModel(private val projectsRepository: ProjectsRepository) : Vi
                 initialValue = ProjectsUiState()
             )
 
-    fun addProject(projectName: String) {
+    fun addProject(projectName: String, projectDescription: String) {
         viewModelScope.launch {
-            projectsRepository.insertProject(Project(name = projectName))
+            projectsRepository.insertProject(Project(name = projectName, description = projectDescription))
         }
     }
 

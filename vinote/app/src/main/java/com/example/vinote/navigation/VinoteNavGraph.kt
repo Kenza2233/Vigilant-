@@ -11,6 +11,7 @@ import com.example.vinote.health.HealthSettingsScreen
 import com.example.vinote.ui.about.AboutScreen
 import com.example.vinote.ui.dashboard.DashboardScreen
 import com.example.vinote.ui.editor.EditorScreen
+import com.example.vinote.ui.translate.TranslateScreen
 import com.example.vinote.ui.newfeatures.NewFeaturesScreen
 import com.example.vinote.ui.projects.AddProjectScreen
 import com.example.vinote.ui.projects.ProjectsScreen
@@ -27,7 +28,8 @@ enum class VinoteScreen {
     Theme,
     About,
     NewFeatures,
-    Health
+    Health,
+    Translate
 }
 
 @Composable
@@ -56,8 +58,8 @@ fun VinoteNavHost(
         composable(route = VinoteScreen.AddProject.name) {
             AddProjectScreen(
                 onNavigateUp = { navController.navigateUp() },
-                onAddProject = { projectName ->
-                    projectsViewModel.addProject(projectName)
+                onAddProject = { projectName, projectDescription ->
+                    projectsViewModel.addProject(projectName, projectDescription)
                     navController.navigateUp()
                 }
             )
@@ -86,6 +88,9 @@ fun VinoteNavHost(
         }
         composable(route = VinoteScreen.Health.name) {
             HealthSettingsScreen()
+        }
+        composable(route = VinoteScreen.Translate.name) {
+            TranslateScreen()
         }
     }
 }

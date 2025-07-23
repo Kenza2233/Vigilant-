@@ -15,9 +15,10 @@ import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Dashboard
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material.icons.filled.Translate
 import androidx.compose.material3.DrawerValue
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.FloatingActionButton
+import androidx.compose.material3.SmallFloatingActionButton
 import com.example.vinote.ui.components.AnimatedSettingsIcon
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -52,6 +53,7 @@ fun ProjectsScreen(
     onAboutClick: () -> Unit,
     onNewFeaturesClick: () -> Unit,
     onHealthClick: () -> Unit,
+    onTranslateClick: () -> Unit,
     modifier: Modifier = Modifier,
     viewModel: ProjectsViewModel = viewModel(factory = AppViewModelProvider.Factory)
 ) {
@@ -89,6 +91,12 @@ fun ProjectsScreen(
                     selected = false,
                     onClick = { onNewFeaturesClick() }
                 )
+                NavigationDrawerItem(
+                    label = { Text("Translate") },
+                    icon = { Icon(Icons.Default.Translate, contentDescription = "Translate") },
+                    selected = false,
+                    onClick = { onTranslateClick() }
+                )
             }
         }
     ) {
@@ -112,7 +120,7 @@ fun ProjectsScreen(
                 )
             },
             floatingActionButton = {
-                FloatingActionButton(onClick = onAddProject) {
+                SmallFloatingActionButton(onClick = onAddProject) {
                     Icon(Icons.Default.Add, contentDescription = "Add Project")
                 }
             },
