@@ -7,6 +7,7 @@ import androidx.compose.material.icons.filled.Palette
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.filled.Translate
 import androidx.compose.material.icons.filled.WbSunny
+import androidx.compose.material.icons.filled.LibraryBooks
 import androidx.compose.material3.Icon
 import androidx.compose.material3.ModalDrawerSheet
 import androidx.compose.material3.NavigationDrawerItem
@@ -81,6 +82,15 @@ fun AppDrawer(
             selected = false,
             onClick = {
                 navController.navigate(VinoteScreen.NewFeatures.name)
+                closeDrawer()
+            }
+        )
+        NavigationDrawerItem(
+            label = { Text("Library") },
+            icon = { Icon(Icons.Default.LibraryBooks, contentDescription = "Library") },
+            selected = false,
+            onClick = {
+                navController.navigate(VinoteScreen.Library.name)
                 closeDrawer()
             }
         )

@@ -7,6 +7,8 @@
 
 <div align="center">
 
+<a href='https://play.google.com/store/apps/details?id=com.yourapp.package&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width=200/></a>
+
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/your-username/vinote)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 [![Kotlin Version](https://img.shields.io/badge/Kotlin-1.9.0-blue.svg)](https://kotlinlang.org)

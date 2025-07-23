@@ -17,6 +17,7 @@ import com.example.vinote.ui.projects.AddProjectScreen
 import com.example.vinote.ui.projects.ProjectsScreen
 import com.example.vinote.ui.projects.ProjectsViewModel
 import com.example.vinote.ui.settings.CloudSyncSettingsScreen
+import com.example.vinote.ui.library.LibraryScreen
 import com.example.vinote.ui.settings.InterfaceSettingsScreen
 import com.example.vinote.ui.theme.ThemeScreen
 
@@ -31,7 +32,8 @@ enum class VinoteScreen {
     NewFeatures,
     Health,
     Translate,
-    InterfaceSettings
+    InterfaceSettings,
+    Library
 }
 
 @Composable
@@ -93,6 +95,9 @@ fun VinoteNavHost(
         }
         composable(route = VinoteScreen.InterfaceSettings.name) {
             InterfaceSettingsScreen()
+        }
+        composable(route = VinoteScreen.Library.name) {
+            LibraryScreen()
         }
     }
 }

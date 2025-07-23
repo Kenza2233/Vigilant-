@@ -9,6 +9,7 @@ import com.example.vinote.ui.dashboard.DashboardViewModel
 import com.example.vinote.ui.editor.EditorViewModel
 import com.example.vinote.ui.projects.ProjectsViewModel
 import com.example.vinote.ui.settings.SettingsViewModel
+import com.example.vinote.ui.library.LibraryViewModel
 import com.example.vinote.ui.settings.InterfaceSettingsViewModel
 import com.example.vinote.ui.theme.ThemeViewModel
 import com.example.vinote.ui.translate.TranslateViewModel
@@ -38,6 +39,9 @@ object AppViewModelProvider {
         }
         initializer {
             InterfaceSettingsViewModel()
+        }
+        initializer {
+            LibraryViewModel(vinoteApplication().container.projectsRepository)
         }
     }
 }

@@ -14,4 +14,5 @@
     <string name="new_features">New Features</string>
     <string name="health_settings">Health Settings</string>
     <string name="interface_settings">Interface Settings</string>
+    <string name="library">Library</string>
 </resources>
