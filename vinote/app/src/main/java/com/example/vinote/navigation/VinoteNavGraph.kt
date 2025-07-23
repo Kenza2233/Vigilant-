@@ -51,10 +51,7 @@ fun VinoteNavHost(
                 onProjectClick = { navController.navigate(VinoteScreen.Editor.name) },
                 onDashboardClick = { navController.navigate(VinoteScreen.Dashboard.name) },
                 onSettingsClick = { navController.navigate(VinoteScreen.Settings.name) },
-                onThemeClick = { navController.navigate(VinoteScreen.Theme.name) },
-                onAboutClick = { navController.navigate(VinoteScreen.About.name) },
-                onNewFeaturesClick = { navController.navigate(VinoteScreen.NewFeatures.name) },
-                onHealthClick = { navController.navigate(VinoteScreen.Health.name) }
+                navController = navController
             )
         }
         composable(route = VinoteScreen.AddProject.name) {

@@ -16,38 +16,40 @@
 
 ---
 
-<p align="center"> 🚀 Vinote adalah aplikasi penulis novel untuk Android yang membantu Anda tetap teratur dan termotivasi. 🚀
+<p align="center"> 🚀 Vinote adalah aplikasi penulis novel untuk Android yang dirancang untuk menjadi teman menulis utama Anda, membantu Anda tetap teratur, termotivasi, dan terinspirasi. 🚀
     <br>
 </p>
 
 ## 📝 Daftar Isi
 
 *   [Tentang](#about)
-*   [Fitur](#features)
+*   [Fitur Unggulan](#features)
 *   [Pratinjau Aplikasi](#preview)
-*   [Memulai](#getting_started)
-*   [Instalasi](#installation)
+*   [Membangun Aplikasi](#building)
 *   [Berkontribusi](#contributing)
 *   [Lisensi](#license)
 
 ## 🧐 Tentang <a name = "about"></a>
 
-Vinote dirancang untuk menjadi teman menulis utama Anda. Baik Anda seorang novelis berpengalaman atau baru memulai, Vinote menyediakan alat yang Anda butuhkan untuk menyusun cerita Anda, melacak kemajuan Anda, dan tetap fokus pada tujuan menulis Anda.
+Menulis novel adalah sebuah perjalanan, dan setiap penulis membutuhkan ruang kerja yang andal. Vinote hadir untuk memenuhi kebutuhan itu. Dibangun dengan teknologi Android modern, Vinote menawarkan pengalaman menulis yang mulus dan bebas gangguan, memungkinkan Anda untuk fokus pada hal yang paling penting: menuangkan ide-ide Anda ke dalam kata-kata.
 
-## ✨ Fitur <a name = "features"></a>
+## ✨ Fitur Unggulan <a name = "features"></a>
 
-*   **Manajemen Proyek:** Buat dan kelola beberapa proyek novel dengan mudah.
-*   **Organisasi Bab:** Atur novel Anda menjadi beberapa bab, susun ulang sesuai kebutuhan.
-*   **Editor Teks Kaya:** Editor yang bersih dan bebas gangguan dengan opsi pemformatan penting.
-*   **Dasbor Menulis:** Visualisasikan kemajuan menulis Anda dengan statistik terperinci:
-    *   **Jumlah Kata:** Lacak jumlah kata untuk setiap bab dan proyek.
-    *   **Waktu Mengetik:** Pantau waktu aktif Anda menulis.
-    *   **Kecepatan Mengetik:** Ukur kecepatan mengetik Anda dalam kata per menit (WPM).
-*   **Sinkronisasi Cloud:** Sinkronkan pekerjaan Anda di beberapa perangkat dengan penyedia cloud favorit Anda.
+*   **📝 Manajemen Proyek & Bab:** Atur novel Anda ke dalam proyek dan bab yang terstruktur dengan rapi.
+*   **✍️ Editor Teks Kaya:** Editor minimalis namun kuat yang mendukung pemformatan dasar.
+*   **📊 Dasbor Analitik:** Dapatkan wawasan tentang kebiasaan menulis Anda dengan dasbor analitik kami:
+    *   **Jumlah Kata:** Lacak jumlah kata harian, mingguan, dan bulanan Anda.
+    *   **Waktu Mengetik:** Pantau berapa banyak waktu yang Anda curahkan untuk menulis.
+    *   **Kecepatan Mengetik:** Ukur kecepatan mengetik rata-rata Anda (WPM).
+*   **☁️ Sinkronisasi Cloud:** Jangan pernah kehilangan pekerjaan Anda. Sinkronkan novel Anda dengan mulus di beberapa perangkat menggunakan:
     *   <img src="https://i.imgur.com/8s3p4Qq.png" width="25" /> Google Drive
     *   <img src="https://i.imgur.com/5fL7M7k.png" width="25" /> OneDrive
     *   <img src="https://i.imgur.com/4fJ8L8D.png" width="25" /> Dropbox
-*   **Penyimpanan Lokal:** Semua data Anda disimpan dengan aman di perangkat Anda.
+*   **🎨 Kustomisasi Antarmuka:** Jadikan Vinote milik Anda. Sesuaikan antarmuka dengan:
+    *   **Tema:** Pilih dari berbagai tema, termasuk mode Terang, Gelap, dan Kaca.
+    *   **Ukuran Font:** Sesuaikan ukuran font agar nyaman dibaca.
+*   **🧘 Fitur Kesehatan:** Kami peduli dengan kesejahteraan Anda. Aktifkan pengingat istirahat untuk menjaga diri Anda tetap segar dan terhindar dari kelelahan.
+*   **🌐 Terjemahan Bawaan:** Terjemahkan teks dengan cepat tanpa meninggalkan aplikasi.
 
 ## 📱 Pratinjau Aplikasi <a name = "preview"></a>
 
@@ -57,47 +59,34 @@ Vinote dirancang untuk menjadi teman menulis utama Anda. Baik Anda seorang novel
   <img src="https://i.imgur.com/YOUR_SCREENSHOT_3.png" width="250" />
 </p>
 
-## 🏁 Memulai <a name = "getting_started"></a>
+## 🚀 Membangun Aplikasi <a name = "building"></a>
 
-Prasyarat berikut diperlukan untuk membangun dan menjalankan proyek:
+Tertarik untuk membangun Vinote dari sumbernya? Ikuti langkah-langkah ini untuk memulai.
 
-*   **Android Studio:** Pastikan Anda memiliki versi terbaru Android Studio.
-*   **JDK:** JDK 11 atau lebih tinggi diperlukan.
+### Prasyarat
 
-### Clone
+*   **Android Studio:** Versi "Giraffe" atau yang lebih baru direkomendasikan.
+*   **JDK:** Java Development Kit versi 11 atau lebih tinggi.
 
-Untuk mendapatkan salinan lokal dan menjalankannya, buka terminal Anda dan jalankan perintah git berikut:
+### Langkah-langkah Membangun
 
-```bash
-git clone https://github.com/your-username/vinote.git
-```
-
-## 🔧 Instalasi <a name = "installation"></a>
-
-### <img src="https://i.imgur.com/426aJ2E.png" width="25" /> Android
-
-1.  **Buka Proyek:** Buka Android Studio dan pilih "Buka Proyek yang Ada". Arahkan ke direktori tempat Anda mengkloning repositori dan pilih.
-2.  **Sinkronisasi Gradle:** Android Studio akan secara otomatis memulai sinkronisasi Gradle. Proses ini mengunduh semua dependensi yang diperlukan untuk proyek. Tunggu hingga selesai.
-3.  **Jalankan Aplikasi:** Setelah sinkronisasi selesai, Anda dapat menjalankan aplikasi.
-    *   **Emulator:** Pilih emulator Android dari daftar perangkat yang tersedia dan klik tombol "Jalankan".
-    *   **Perangkat Fisik:** Hubungkan perangkat Android Anda ke komputer Anda melalui USB. Pastikan Anda telah mengaktifkan Opsi Pengembang dan USB Debugging di perangkat Anda. Pilih perangkat Anda dari daftar dan klik "Jalankan".
-
-### <img src="https://i.imgur.com/0dYQj4p.png" width="25" /> iOS & <img src="https://i.imgur.com/J3xQ2Qj.png" width="25" /> Linux
-
-Saat ini, Vinote adalah aplikasi khusus Android. Namun, kami sangat antusias dengan kemungkinan membawanya ke platform lain! Jika Anda seorang pengembang dengan pengalaman dalam pengembangan iOS atau desktop (menggunakan Compose for Desktop), kami akan senang menerima kontribusi Anda. Lihat bagian [Berkontribusi](#contributing) di bawah ini untuk detailnya.
+1.  **Clone Repositori:**
+    ```bash
+    git clone https://github.com/your-username/vinote.git
+    ```
+2.  **Buka di Android Studio:**
+    *   Luncurkan Android Studio.
+    *   Pilih **File > Open** dan arahkan ke direktori tempat Anda mengkloning repositori.
+3.  **Sinkronisasi Gradle:**
+    *   Biarkan Android Studio menyelesaikan proses sinkronisasi Gradle. Ini akan mengunduh semua dependensi yang diperlukan.
+4.  **Jalankan Aplikasi:**
+    *   Pilih perangkat (emulator atau fisik) dan klik ikon **Run** (▶️).
 
 ## 🤝 Berkontribusi <a name = "contributing"></a>
 
-Kontribusi adalah yang membuat komunitas open source menjadi tempat yang luar biasa untuk belajar, menginspirasi, dan berkreasi. Setiap kontribusi yang Anda buat sangat **dihargai**.
+Kami menyambut baik kontribusi dalam segala bentuk! Baik itu melaporkan bug, menyarankan fitur, atau mengirimkan kode, bantuan Anda sangat kami hargai.
 
-Jika Anda memiliki saran yang akan membuat ini lebih baik, silakan fork repo dan buat permintaan tarik. Anda juga dapat membuka masalah dengan tag "peningkatan".
-Jangan lupa beri bintang pada proyek ini! Terima kasih lagi!
-
-1.  Fork Proyek
-2.  Buat Cabang Fitur Anda (`git checkout -b feature/AmazingFeature`)
-3.  Lakukan Perubahan Anda (`git commit -m 'Add some AmazingFeature'`)
-4.  Dorong ke Cabang (`git push origin feature/AmazingFeature`)
-5.  Buka Permintaan Tarik
+Lihat halaman [masalah](https://github.com/your-username/vinote/issues) kami untuk melihat di mana Anda dapat membantu.
 
 ## 📝 Lisensi <a name = "license"></a>
 

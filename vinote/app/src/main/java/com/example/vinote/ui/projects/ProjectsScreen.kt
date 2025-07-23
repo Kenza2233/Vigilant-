@@ -29,6 +29,7 @@ import androidx.compose.material3.NavigationDrawerItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
+import com.example.vinote.navigation.VinoteScreen
 import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -49,12 +50,7 @@ fun ProjectsScreen(
     onProjectClick: (Int) -> Unit,
     onDashboardClick: () -> Unit,
     onSettingsClick: () -> Unit,
-    onThemeClick: () -> Unit,
-    onAboutClick: () -> Unit,
-    onNewFeaturesClick: () -> Unit,
-    onHealthClick: () -> Unit,
-    onTranslateClick: () -> Unit,
-    onInterfaceSettingsClick: () -> Unit,
+    navController: NavController,
     modifier: Modifier = Modifier,
     viewModel: ProjectsViewModel = viewModel(factory = AppViewModelProvider.Factory)
 ) {
@@ -65,45 +61,10 @@ fun ProjectsScreen(
     ModalNavigationDrawer(
         drawerState = drawerState,
         drawerContent = {
-            ModalDrawerSheet {
-                NavigationDrawerItem(
-                    label = { Text("Themes") },
-                    selected = false,
-                    onClick = { onThemeClick() }
-                )
-                NavigationDrawerItem(
-                    label = { Text("Settings") },
-                    selected = false,
-                    onClick = { onSettingsClick() }
-                )
-                NavigationDrawerItem(
-                    label = { Text("Health") },
-                    icon = { Icon(Icons.Default.Favorite, contentDescription = "Health") },
-                    selected = false,
-                    onClick = { onHealthClick() }
-                )
-                NavigationDrawerItem(
-                    label = { Text("About") },
-                    selected = false,
-                    onClick = { onAboutClick() }
-                )
-                NavigationDrawerItem(
-                    label = { Text("New Features") },
-                    selected = false,
-                    onClick = { onNewFeaturesClick() }
-                )
-                NavigationDrawerItem(
-                    label = { Text("Translate") },
-                    icon = { Icon(Icons.Default.Translate, contentDescription = "Translate") },
-                    selected = false,
-                    onClick = { onTranslateClick() }
-                )
-                NavigationDrawerItem(
-                    label = { Text("Interface Settings") },
-                    selected = false,
-                    onClick = { onInterfaceSettingsClick() }
-                )
-            }
+            AppDrawer(
+                navController = navController,
+                closeDrawer = { scope.launch { drawerState.close() } }
+            )
         }
     ) {
         Scaffold(
