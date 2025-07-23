@@ -59,7 +59,7 @@ Tertarik untuk membangun Vinote dari sumbernya? Ikuti langkah-langkah ini untuk 
 *   **Android Studio:** Pastikan Anda memiliki versi terbaru [Android Studio](https://developer.android.com/studio).
 *   **JDK:** [Java Development Kit](https://www.oracle.com/java/technologies/downloads/) versi 11 atau lebih tinggi diperlukan.
 
-### Langkah-langkah Membangun
+### <img src="https://i.imgur.com/426aJ2E.png" width="25" /> Android
 
 1.  **Clone Repositori:**
     ```bash
@@ -73,20 +73,17 @@ Tertarik untuk membangun Vinote dari sumbernya? Ikuti langkah-langkah ini untuk 
 4.  **Jalankan Aplikasi:**
     *   Pilih perangkat (emulator atau fisik) dan klik ikon **Run** (▶️).
 
-### <img src="https://i.imgur.com/0dYQj4p.png" width="25" /> Membawa Vinote ke iOS
+### <img src="https://i.imgur.com/J3xQ2Qj.png" width="25" /> Windows
 
-Saat ini, Vinote adalah aplikasi khusus Android. Namun, kami sangat antusias dengan kemungkinan membawanya ke iOS. Dengan kekuatan **Kotlin Multiplatform**, sebagian besar logika bisnis aplikasi (termasuk manajemen database dan fitur inti) dapat dibagikan antara Android dan iOS, secara signifikan mengurangi upaya yang diperlukan untuk porting.
+Dengan kekuatan **Compose for Desktop**, Anda juga dapat membangun dan menjalankan Vinote sebagai aplikasi desktop di Windows.
 
-Jika Anda seorang pengembang iOS yang bersemangat dan ingin menerima tantangan ini, berikut adalah peta jalan potensial:
+1.  **Siapkan Proyek:** Pastikan Anda telah mengikuti langkah-langkah untuk membangun aplikasi Android terlebih dahulu.
+2.  **Jalankan Tugas Gradle:**
+    *   Buka panel **Gradle** di Android Studio (biasanya di sisi kanan).
+    *   Arahkan ke **vinote > Tasks > compose desktop**.
+    *   Jalankan tugas `run`.
 
-1.  **Migrasikan ke Kotlin Multiplatform (KMP):**
-    *   Restrukturisasi proyek menjadi proyek KMP, pisahkan kode bersama (logika bisnis, akses data) dari kode khusus platform (UI).
-2.  **Bangun UI iOS:**
-    *   Buat antarmuka pengguna iOS asli menggunakan SwiftUI, yang menggunakan logika bisnis bersama.
-3.  **Integrasi Khusus Platform:**
-    *   Terapkan fungsionalitas khusus platform apa pun yang diperlukan, seperti integrasi dengan iCloud.
-
-Kami sangat menyambut pengembang yang tertarik untuk memelopori upaya ini.
+Ini akan membangun dan meluncurkan aplikasi Vinote sebagai aplikasi desktop mandiri di mesin Windows Anda.
 
 ## 🤝 Berkontribusi <a name = "contributing"></a>
 
